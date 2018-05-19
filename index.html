@@ -1,25 +1,43 @@
 <!DOCTYPE HTML>
 
 <html lang="en-us">
-    <head>
 
-    </head>
+<head>
+    <script src="assets/javascript/game.js"></script>
+</head>
 
-    <body>
-        <h3>
-            Press any key to get started!
-        </h3>
-        <h3>
-            Wins:
-        </h3>
-        <h3>
-            Number of Guesses Remaining:
-        </h3>
-        <h3>
-            Letters Already Guessed
-        </h3>
-        <h3>
-            
-        </h3>
-    </body>
+<body>
+    <div id="game">
+    <h1>
+        The Psychic Game
+    </h1>
+    <h2>
+        Guess what letter I'm thinking of
+    </h2>
+    <h3>Wins:
+        <script>
+            document.write(wins);
+        </script>
+    </h3>
+    <h3>
+        Losses:
+        <script>
+            document.write(losses);
+        </script>
+    </h3>
+    <h3>
+        Guesses Left:
+        <script>
+            document.write(guessesleft);
+        </script>
+    </h3>
+    <h3>
+        Your Guesses so far:
+        <script>
+            document.write(userguess);
+        </script>
+    </h3>
+    </div>
+</body>
+
 </html>
